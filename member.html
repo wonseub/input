@@ -5,20 +5,22 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form action="member.html" method="get">
+        <fieldset>
+            <legend>필수항목</legend>
         <ul>
-            <li>아이디<input type="text"></li>
-            <li>비밀번호<input type="password"></li>
-            <li>이메일<input type="text"></li>
+            <li>아이디<input type="text" value="아이디" name="userid"></li>
+            <li>비밀번호<input type="password" value="패스워드" name="userpassword"></li>
+            <li>이메일<input type="text" value="이메일" name="useremail"></li>
             <li>성별:
-                <input type="radio">남자
-                <input type="radio">여자
+                <input type="radio" name="sex" checked="checked">남자
+                <input type="radio" name="sex">여자
             </li>
             <li>취미:
-                <input type="checkbox">영화감상
-                <input type="checkbox">음주가무1
-                <input type="checkbox">음주가무2
-                <input type="checkbox">회식
+                <input name="option1" type="checkbox">영화감상
+                <input name="option2" type="checkbox">음주가무1
+                <input name="option3" type="checkbox">음주가무2
+                <input name="option4" type="checkbox">회식
             </li>
             <li>
                 첨부파일<input type="file"></li>
@@ -27,6 +29,7 @@
         <input type="button" value="뒤로가기">
         <input type="submit" value="회원가입">
         <input type="reset" value="초기화">
+    </fieldset>
 </form>
 
 
