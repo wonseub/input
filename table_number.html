@@ -21,74 +21,75 @@
     <tbody>
 
         <tr>
-            <th>사용자이름</th>
-                <td colspan="2"><input type="text" value="" name="username"></td>
+            <th scope="colgroup" colspan="1">사용자이름</th>
+                <td scope="row" colspan="2">
+                    <label for="user name"> <input type="text" id="username" value="" name="username"></td>
             </tr>
             <tr>
-            <th rowspan="1">아이디</th>
-                <td colspan="3"><input type="text" value="" name="userid">
-                <input type="button" value="중복확인" name="button"><br />
+            <th scope="group" rowspan="1">아이디</th>
+                <td scope="row" colspan="3"> <label for="userID"> <input type="text" id="userid" value="" name="userid">
+                <label for="button"> <input type="button" id="button"value="중복확인" name="button"><br />
                 <em> - 영문,숫자,특수 문자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)</em><br />
             <em> - 유출되기 쉬운 비밀번호는 등록할 수 없습니다.(예:111,abcd,password 등)</em></td>
             </tr>
 
             <tr>
-            <th rowspan="1">비밀번호</th>
-            <td colspan="3"><input type="password" value="" name="userpw"> <br />
+            <th scope="group"rowspan="1">비밀번호</th>
+            <td scope="row"colspan="3"><label for="pw"><input type="password" id="id" value="" name="userpw"> <br />
             <em>영문,숫자,특수 문자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)</em> <br />
             <em> 유출되기 쉬운 비밀번호는 등록할 수 없습니다.(예:111,abcd,password 등)</em>
             </td>
             </tr>
 
             <tr>
-            <th rowspan="1">비밀번호 확인</th>
-            <td colspan="3"><input type="password" value="" name="userpw">
+            <th scope="group" rowspan="1">비밀번호 확인</th>
+            <td scope="row" colspan="3"><label for="userPW"><input type="password" id="userpw"value="" name="userpw">
             </td>
             </tr>
 
             <tr>
-            <th colspan="1">이메일</th>
-                        <td><input type="text" value="" name="text1">   @
-                        <input type="text" value="" name="text2">
+            <th scope="row"colspan="1">이메일</th>
+                        <td><label for="text1"><input type="text" id="text1"value="" name="text1">   @
+                        <label for="text2"><input type="text" id="text2"value="" name="text2">
 
                 <select>
-                    <option>@naver.com(네이버)</option>
-                    <option>@hanmail.net(한메일)</option>
-                    <option>@gmail.com(지메일)</option>
-                    <option>@nate.com(네이트)</option>
-                    <option>@hotmail.com(MSN)</option>
+                    <option>naver.com(네이버)</option>
+                    <option>hanmail.net(한메일)</option>
+                    <option>gmail.com(지메일)</option>
+                    <option>nate.com(네이트)</option>
+                    <option>hotmail.com(MSN)</option>
                 </select>
             </td>
         </tr>
 
         <tr>
-            <th colspan="1">연락처</th>
-            <td><input type="text" value="" name="">
-            <input type="text" value="" name="">
+            <th scope="group" colspan="1">연락처</th>
+            <td><input type="text" value="" name=""> -
+            <input type="text" value="" name=""> -
             <input type="text" value="" name="">
             </td>
         </tr>
 
         <tr>
-            <th colspan="1">휴대전화</th>
+            <th scope="row"colspan="1">휴대전화</th>
             <td><select>
                 <option>010</option>
                 <option>016</option>
                 <option>02</option>
-            </select>
-        <input type="text" value="" name="">
-        <input type="text" value="">
-        <input type="text" value="">
+            </select> -
+        <label for="select1"><input type="text" id="select1"value="" name=""> -
+        <label for="select2"><input type="text" id="select2"value="" name="">
     </td>
         </tr>
 
         <tr>
             <th colspan="1">주소</td>
-            <td rowspan="3"> <input type="text" value="" name=""> -
-            <input type="text" value="" name="">
-            <input type="button" value="주소찾기" name=""> <br />
-            <input type="text" value="" name=""> <br />
-            <input type="text" value="" name="">
+            <td rowspan="3">
+                <label for="adrees"> <input type="text" id="adress" value="" name=""> -
+            <label for="adrees1"><input type="text" id="adress1" value="" name="">
+            <label for="adrees2"><input type="button" id="adress2" value="주소찾기" name=""> <br />
+            <label for="adrees3"><input type="text" id="adress3" value="" name=""> <br />
+            <label for="adrees4"><input type="text" id="adress4" value="" name="">
         </td>
     </tr>
 
