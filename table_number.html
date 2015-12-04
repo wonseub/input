@@ -6,48 +6,48 @@
 </head>
 
 <body>
+    <fieldset>
+        <legend>회원정보입력</legend>
+        <caption>게시판</caption> <br />
+    <summary>*표시는 필수 입력 사항입니다.</summary>
 
-    <legend>회원정보입력</legend> <hr />
+    <table border="1" width="150%" sammary="자세한설명">
 
-    <strong>*표시는 필수 입력 사항입니다.<strong>
-        <fieldset>
     <colgroup>
-        <col width="100"/>
-        <col width="100"/>
+        <col width="150"/>
+        <col width="800"/>
     </colgroup>
-
-        <table border="1" width="150%" sammary="자세한설명">
 
     <tbody>
 
         <tr>
-            <th colspan="1">사용자이름</th>
-                <td><input type="text" value="" name="username"></td>
+            <th>사용자이름</th>
+                <td colspan="2"><input type="text" value="" name="username"></td>
             </tr>
             <tr>
-            <td>아이디</td>
-                <td rowspan="3"><input type="text" value="" name="userid">
-                <input type="button" value="중복확인" name="button"> <br />
-                <em> - 영문,숫자,특수 문자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)</em> <br />
-                <em> - 유출되기 쉬운 비밀번호는 등록할 수 없습니다.(예:111,abcd,password 등)</em>
+            <th rowspan="1">아이디</th>
+                <td colspan="3"><input type="text" value="" name="userid">
+                <input type="button" value="중복확인" name="button"><br />
+                <em> - 영문,숫자,특수 문자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)</em><br />
+            <em> - 유출되기 쉬운 비밀번호는 등록할 수 없습니다.(예:111,abcd,password 등)</em></td>
+            </tr>
+
+            <tr>
+            <th rowspan="1">비밀번호</th>
+            <td colspan="3"><input type="password" value="" name="userpw"> <br />
+            <em>영문,숫자,특수 문자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)</em> <br />
+            <em> 유출되기 쉬운 비밀번호는 등록할 수 없습니다.(예:111,abcd,password 등)</em>
             </td>
             </tr>
 
             <tr>
-            <td>비밀번호
-            <td><input type="password" value="" name="userpw"><br />
-        <em>영문,숫자,특수 문자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)</em> <br />
-        <em> 유출되기 쉬운 비밀번호는 등록할 수 없습니다.(예:111,abcd,password 등)</em>
-        <td>
-    </tr>
-
-            <tr>
-            <td>비밀번호 확인</td>
-            <td rowspan="2"><input type="password" value="" name="userpw"></td>
+            <th rowspan="1">비밀번호 확인</th>
+            <td colspan="3"><input type="password" value="" name="userpw">
+            </td>
             </tr>
 
             <tr>
-            <td>이메일</td>
+            <th colspan="1">이메일</th>
                         <td><input type="text" value="" name="text1">   @
                         <input type="text" value="" name="text2">
 
@@ -62,7 +62,7 @@
         </tr>
 
         <tr>
-            <td>연락처</td>
+            <th colspan="1">연락처</th>
             <td><input type="text" value="" name="">
             <input type="text" value="" name="">
             <input type="text" value="" name="">
@@ -70,7 +70,7 @@
         </tr>
 
         <tr>
-            <td>휴대전화</td>
+            <th colspan="1">휴대전화</th>
             <td><select>
                 <option>010</option>
                 <option>016</option>
@@ -83,7 +83,7 @@
         </tr>
 
         <tr>
-            <td>주소</td>
+            <th colspan="1">주소</td>
             <td rowspan="3"> <input type="text" value="" name=""> -
             <input type="text" value="" name="">
             <input type="button" value="주소찾기" name=""> <br />
@@ -93,6 +93,7 @@
     </tr>
 
     </tbody>
+</table>
 </fieldset>
 
 </body>
